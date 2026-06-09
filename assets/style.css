@@ -1,0 +1,1019 @@
+
+:root{
+  --ink:#151515;
+  --muted:#625d55;
+  --paper:#f4f1ea;
+  --soft:#ebe5dc;
+  --soft2:#ded6ca;
+  --line:rgba(21,21,21,.14);
+  --max:1220px;
+  --side:clamp(22px,5.4vw,84px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;background:transparent}
+body{
+  margin:0;
+  font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color:var(--ink);
+  background:
+    radial-gradient(circle at 10% 5%, rgba(117,83,166,.10), transparent 28rem),
+    radial-gradient(circle at 88% 4%, rgba(0,160,185,.08), transparent 36rem),
+    radial-gradient(circle at 20% 92%, rgba(230,180,88,.08), transparent 34rem),
+    linear-gradient(180deg,#f4f1ea 0%,#eee8dd 45%,#f7f3ec 100%);
+  line-height:1.58;
+  letter-spacing:.005em;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+a{color:inherit;text-decoration:none} img{display:block;width:100%;height:auto}.container{max-width:var(--max);margin:0 auto}.nav{position:fixed;z-index:40;top:0;left:0;right:0;padding:22px var(--side);display:flex;align-items:center;justify-content:space-between;color:var(--ink);transition:.28s ease;background:linear-gradient(to bottom,rgba(0,0,0,.58),rgba(0,0,0,0))}.nav.scrolled{
+  color:var(--ink);
+  background:rgba(17,17,15,.88);
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid rgba(236,232,223,.12)
+}.site-title{font-weight:850;letter-spacing:-.04em;font-size:23px}.nav-links{display:flex;gap:32px;align-items:center;font-size:13px;font-weight:760;letter-spacing:.075em;text-transform:uppercase}.nav-links a{opacity:.9}.nav-links a:hover{opacity:1}.menu-btn{display:none;background:transparent;border:0;color:inherit;font:inherit;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.hero{min-height:100vh;display:grid;align-items:end;position:relative;color:var(--ink);background-image:url('img/hero.jpg');background-position:center;background-size:cover;isolation:isolate}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.68),rgba(0,0,0,.16) 55%,rgba(0,0,0,.05)),linear-gradient(0deg,rgba(0,0,0,.42),rgba(0,0,0,0) 55%);z-index:-1}.hero-inner{padding:180px var(--side) 76px;max-width:1120px}.eyebrow{font-size:12px;font-weight:850;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin-bottom:22px}.hero .eyebrow{color:rgba(255,255,255,.86);font-size:10px;letter-spacing:.16em;opacity:.72}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(40px,5.3vw,72px);line-height:.84;letter-spacing:-.085em;margin:0 0 28px;max-width:890px}.hero-line{font-size:clamp(17px,2vw,23px);color:rgba(255,255,255,.86);margin:0 0 34px;max-width:680px}.actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 22px;background:var(--ink);color:var(--ink);font-weight:800;font-size:13px;letter-spacing:.04em;text-transform:uppercase;transition:.18s ease}.btn:hover{transform:translateY(-2px)}.btn.light{background:#151411;color:#111}.text-link{font-weight:820;border-bottom:1px solid currentColor;padding-bottom:4px}.hero .text-link{color:var(--ink)}.section{padding:clamp(82px,10vw,150px) var(--side)}.section.soft{background:var(--soft)}.section.black{background:#0b0b0a;color:var(--ink)}.section-head{display:grid;grid-template-columns:1.1fr .85fr;gap:clamp(34px,6vw,90px);align-items:end;margin-bottom:clamp(50px,7vw,86px)}.section-head h2{font-size:clamp(46px,7.5vw,106px);line-height:.88;letter-spacing:-.075em;margin:0}.section-head p{font-size:clamp(17px,1.75vw,21px);color:var(--muted);margin:0}.soft .section-head p{color:#5f5b54}.why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line)}.why-card{background:var(--soft);padding:34px;min-height:255px;display:flex;flex-direction:column;justify-content:space-between}.why-card .num{font-size:12px;font-weight:800;color:#9a9288}.why-card h3{font-size:clamp(22px,2.2vw,30px);line-height:1.02;letter-spacing:-.04em;margin:0 0 14px}.why-card p{color:#5f5b54;margin:0}.product-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.product-card img{aspect-ratio:4/5;object-fit:cover}.product-card h3{font-size:clamp(27px,3vw,40px);line-height:.95;letter-spacing:-.055em;margin:24px 0 12px}.product-card p{color:var(--muted);margin:0}.manifesto{padding:clamp(90px,12vw,170px) var(--side);background:#0b0b0a;color:var(--ink)}.manifesto .container{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(40px,8vw,110px);align-items:center}.manifesto h2{font-size:clamp(48px,7.5vw,104px);line-height:.88;letter-spacing:-.075em;margin:0}.manifesto p{font-size:clamp(19px,2.1vw,28px);line-height:1.32;color:rgba(255,255,255,.78);margin:26px 0 0}.manifesto img{aspect-ratio:1.35/1;object-fit:cover;opacity:.92}.brand-intro{max-width:920px;margin-bottom:clamp(52px,7vw,88px)}.brand-intro h2{font-size:clamp(50px,8vw,116px);line-height:.88;letter-spacing:-.08em;margin:0 0 28px}.brand-intro p{font-size:clamp(20px,2.5vw,31px);line-height:1.22;margin:0 0 22px}.brand-intro .small{font-size:clamp(16px,1.6vw,20px);color:var(--muted);max-width:760px}.brand-feature{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,72px);align-items:center;padding:clamp(52px,7vw,92px) 0;border-top:1px solid var(--line)}.brand-feature:nth-of-type(even){grid-template-columns:.85fr 1.15fr}.brand-feature:nth-of-type(even) .brand-image{order:2}.brand-feature:nth-of-type(even) .brand-copy{order:1}.brand-image img{aspect-ratio:1.45/1;object-fit:cover}.brand-logo{max-height:54px;width:auto;max-width:260px;margin-bottom:26px}.brand-copy h3{font-size:clamp(30px,3.8vw,52px);line-height:.88;letter-spacing:-.075em;margin:0 0 24px}.brand-copy p{font-size:18px;color:var(--muted);max-width:540px}.brand-actions{display:flex;gap:22px;align-items:center;flex-wrap:wrap;margin-top:26px}.world-line{padding:clamp(56px,8vw,100px) var(--side);background:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.world-line p{max-width:1100px;margin:0 auto;font-size:clamp(26px,4.2vw,56px);line-height:1.05;letter-spacing:-.058em}.about-grid{display:grid;grid-template-columns:1.03fr .97fr;gap:clamp(42px,6vw,86px);align-items:center}.about-grid img{aspect-ratio:1.28/1;object-fit:cover}.about-copy h2{font-size:clamp(46px,7vw,98px);line-height:.88;letter-spacing:-.075em;margin:0 0 30px}.about-copy>p{font-size:19px;color:var(--muted);max-width:640px}.bio-row{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:34px}.bio{border-top:1px solid var(--line);padding-top:20px}.bio h3{font-size:24px;letter-spacing:-.035em;margin:0 0 9px}.bio p{color:var(--muted);margin:0}.references{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(42px,7vw,100px);align-items:start}.references h2{font-size:clamp(46px,7vw,98px);line-height:.88;letter-spacing:-.075em;margin:0 0 22px}.references p{color:rgba(255,255,255,.72);font-size:18px}.ref-list{columns:2;column-gap:48px;list-style:none;padding:0;margin:0;font-size:clamp(24px,3vw,42px);font-weight:760;letter-spacing:-.055em;line-height:1.22}.ref-list li{break-inside:avoid;margin:0 0 16px}.journal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}.article img{aspect-ratio:1.45/1;object-fit:cover}.article h3{font-size:clamp(26px,3vw,38px);line-height:.96;letter-spacing:-.055em;margin:22px 0 10px}.article p{color:var(--muted);margin:0}.downloads-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(34px,6vw,80px);align-items:start}.download-list{border-top:1px solid var(--line)}.download-item{display:grid;grid-template-columns:1fr auto;gap:24px;padding:24px 0;border-bottom:1px solid var(--line);align-items:center}.download-item strong{font-size:22px;letter-spacing:-.03em}.download-item span{display:block;color:var(--muted);margin-top:4px}.contact{min-height:78vh;display:grid;align-items:center}.contact-box{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(40px,8vw,110px);align-items:end}.contact h2{font-size:clamp(28px,3.6vw,48px);line-height:.84;letter-spacing:-.085em;margin:0}.email{font-size:clamp(25px,4vw,54px);font-weight:760;letter-spacing:-.055em;border-bottom:2px solid currentColor}.company{margin-top:34px;color:var(--muted);font-size:18px}.footer{padding:42px var(--side);border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;align-items:end;flex-wrap:wrap}.qb{width:180px;max-width:42vw}.footer-links{display:flex;gap:22px;color:var(--muted);font-size:14px}.mobile-panel{display:none}
+@media(max-width:930px){.nav-links{display:none}.menu-btn{display:block}.mobile-panel{display:block;position:fixed;z-index:39;top:0;right:0;left:0;background:rgba(255,255,255,.98);padding:92px 28px 36px;transform:translateY(-110%);transition:.24s ease;border-bottom:1px solid var(--line)}.mobile-panel.open{transform:translateY(0)}.mobile-panel a{display:block;font-size:28px;font-weight:800;letter-spacing:-.05em;margin-bottom:18px}.hero{background-image:url('img/hero-mobile.jpg');}.section-head,.manifesto .container,.about-grid,.references,.downloads-grid,.contact-box{grid-template-columns:1fr}.why-grid,.product-grid,.journal-grid{grid-template-columns:1fr 1fr}.brand-feature,.brand-feature:nth-of-type(even){grid-template-columns:1fr}.brand-feature:nth-of-type(even) .brand-image,.brand-feature:nth-of-type(even) .brand-copy{order:initial}.brand-logo{max-height:42px}.ref-list{columns:1}.manifesto img{margin-top:20px}}
+@media(max-width:620px){.site-title{font-size:20px}.hero-inner{padding:158px 22px 54px}.section{padding:76px 22px}.manifesto{padding:82px 22px}.world-line{padding:62px 22px}.why-grid,.product-grid,.journal-grid,.bio-row{grid-template-columns:1fr}.why-card{min-height:210px;padding:28px}.brand-feature{padding:52px 0}.footer{padding:34px 22px}.footer-links{width:100%;flex-wrap:wrap}.contact{min-height:65vh}h1{font-size:64px}}
+
+.hero .eyebrow{font-size:10px;letter-spacing:.16em;opacity:.72}
+
+.about-copy h2{font-size:clamp(24px,3.1vw,42px)!important;}
+.philosophy .section-title{font-size:clamp(23px,2.8vw,38px)!important;}
+
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:0;
+  opacity:.075;
+  background-image:
+    radial-gradient(circle at 25% 35%, rgba(255,255,255,.7) 0 .6px, transparent .7px),
+    radial-gradient(circle at 70% 65%, rgba(0,0,0,.9) 0 .6px, transparent .7px);
+  background-size:3px 3px,4px 4px;
+  mix-blend-mode:overlay;
+}
+body > *{position:relative;z-index:1}
+
+h1,.section-title,.brand-copy h3,.philosophy h2,.about-copy h2,.contact h2{
+  line-height:1.08!important;
+  letter-spacing:.012em!important;
+  font-weight:760!important;
+}
+h1{letter-spacing:.018em!important;}
+.hero-logos{
+  display:flex;
+  align-items:center;
+  gap:22px;
+  margin-bottom:18px;
+  opacity:.82;
+  flex-wrap:wrap;
+}
+.hero-logos img{
+  width:auto;
+  max-width:120px;
+  max-height:30px;
+  object-fit:contain;
+  filter:brightness(0) invert(1);
+}
+.hero .eyebrow{
+  font-size:10px!important;
+  letter-spacing:.18em!important;
+  opacity:.72!important;
+  margin-bottom:18px!important;
+}
+.btn.light{
+  background:rgba(236,232,223,.96)!important;
+  color:#111!important;
+}
+.btn{
+  background:var(--ink)!important;
+  color:#111!important;
+}
+.text-link{color:inherit}
+.cat,.brand-copy,.article,.contact-card{background:#151411!important}
+.soft{background:linear-gradient(180deg,#171613,#11110f)!important}
+.refs{background:#0b0b0a!important}
+footer{background:#0f0f0d}
+.logos span{border-color:rgba(236,232,223,.18)!important}
+
+/* v1.5: polaroid / faded darkroom atmosphere */
+.soft{
+  background:
+    radial-gradient(circle at 10% 10%, rgba(102,74,160,.16), transparent 34rem),
+    radial-gradient(circle at 88% 30%, rgba(0,160,190,.10), transparent 38rem),
+    linear-gradient(180deg,#171613,#11110f)!important;
+}
+.brand-row,
+.cat,
+.article,
+.brand-copy,
+.contact-card{
+  box-shadow:0 0 0 1px rgba(236,232,223,.04);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  background:
+    radial-gradient(circle at 76% 32%, rgba(0,210,230,.16), transparent 30rem),
+    radial-gradient(circle at 58% 12%, rgba(138,72,190,.13), transparent 24rem);
+  mix-blend-mode:screen;
+  pointer-events:none;
+}
+.hero-logos img[alt="Expression"]{
+  max-width:145px!important;
+  max-height:40px!important;
+  transform:scale(1.18);
+  transform-origin:left center;
+}
+.hero-logos{
+  gap:26px!important;
+}
+.hero .eyebrow{
+  margin-top:4px!important;
+}
+
+/* v1.6: return content to warm off-white, keep subtle grain/faded dye feeling */
+.soft{
+  background:
+    radial-gradient(circle at 8% 12%, rgba(115,80,160,.08), transparent 32rem),
+    radial-gradient(circle at 92% 35%, rgba(0,160,190,.06), transparent 36rem),
+    linear-gradient(180deg,#ebe5dc,#f4f1ea)!important;
+}
+.cat,.brand-copy,.article,.contact-card{
+  background:#f7f3ec!important;
+  color:#151515!important;
+  box-shadow:0 0 0 1px rgba(21,21,21,.05);
+}
+.brand-row{
+  border-top:1px solid rgba(21,21,21,.14)!important;
+}
+.refs{
+  background:#11110f!important;
+  color:#ece8df!important;
+}
+.refs p,.refs .section-head p{
+  color:rgba(236,232,223,.72)!important;
+}
+.logos span{
+  border-color:rgba(236,232,223,.20)!important;
+}
+footer{
+  background:#f4f1ea!important;
+  color:#625d55!important;
+}
+.nav.scrolled{
+  color:#151515!important;
+  background:rgba(244,241,234,.92)!important;
+  border-bottom:1px solid rgba(21,21,21,.12)!important;
+}
+.hero-inner{
+  transform:translateY(-12vh);
+}
+.hero-logos{
+  margin-top:28px!important;
+  margin-bottom:10px!important;
+}
+.hero-logos img[alt="Expression"]{
+  max-width:155px!important;
+  max-height:44px!important;
+  transform:scale(1.24);
+  transform-origin:left center;
+}
+.hero .eyebrow{
+  margin-top:8px!important;
+  margin-bottom:30px!important;
+  font-size:10px!important;
+  letter-spacing:.18em!important;
+  opacity:.75!important;
+}
+.hero .actions{
+  margin-top:8px!important;
+}
+h1,.section-title,.brand-copy h3,.philosophy h2,.about-copy h2,.contact h2{
+  line-height:1.12!important;
+  letter-spacing:.02em!important;
+  font-weight:730!important;
+}
+.section-title{
+  font-size:clamp(22px,2.6vw,36px)!important;
+}
+.philosophy h2,.philosophy .section-title{
+  font-size:clamp(24px,2.8vw,40px)!important;
+}
+.about-copy h2,.about h2{
+  font-size:clamp(22px,2.6vw,36px)!important;
+}
+.btn{
+  background:#151515!important;
+  color:#f4f1ea!important;
+}
+.btn.light{
+  background:#f4f1ea!important;
+  color:#151515!important;
+}
+
+p,.section-head p,.cat p,.article p,.brand-copy p,.bio p{
+  color:var(--muted)!important;
+}
+.hero p,.hero .text-link,.hero .eyebrow{
+  color:rgba(244,241,234,.86)!important;
+}
+.hero h1{color:#f4f1ea!important;}
+
+/* v1.14: return to v1.6 clean/off-white direction, no chalk-noise treatment */
+body{
+  color:#151515!important;
+  background:
+    radial-gradient(circle at 10% 5%, rgba(117,83,166,.08), transparent 28rem),
+    radial-gradient(circle at 88% 4%, rgba(0,160,185,.06), transparent 36rem),
+    linear-gradient(180deg,#f4f1ea 0%,#eee8dd 45%,#f7f3ec 100%)!important;
+}
+body:before,
+body:after{
+  display:none!important;
+}
+.nav.scrolled{
+  color:#151515!important;
+  background:rgba(244,241,234,.92)!important;
+  border-bottom:1px solid rgba(21,21,21,.12)!important;
+  backdrop-filter:blur(12px)!important;
+}
+.soft{
+  background:linear-gradient(180deg,#ebe5dc,#f4f1ea)!important;
+}
+.cat,.brand-copy,.article,.contact-card{
+  background:#f7f3ec!important;
+  color:#151515!important;
+  box-shadow:0 0 0 1px rgba(21,21,21,.05)!important;
+}
+.brand-row{
+  border-top:1px solid rgba(21,21,21,.14)!important;
+}
+p,.section-head p,.cat p,.article p,.brand-copy p,.bio p{
+  color:#625d55!important;
+}
+
+/* Inserted Flow image exactly as visual editorial element in the "Nem katalogus" section */
+.intro-insert{
+  margin:clamp(34px,5vw,70px) 0 clamp(30px,4vw,56px);
+  width:min(980px,78vw);
+  margin-left:auto;
+  position:relative;
+  z-index:2;
+}
+.intro-insert img{
+  width:100%;
+  aspect-ratio:16/7.2;
+  object-fit:cover;
+  object-position:center;
+  display:block;
+  filter:saturate(.96) contrast(1.02);
+}
+
+/* Headline consistency: all major section headlines closer to hero scale but controlled */
+.section-title,
+.about-copy h2,
+.about h2,
+.philosophy h2,
+.philosophy .section-title,
+.contact h2,
+.manifesto h2,
+.world-line h2,
+.refs h2,
+#tudastar h2,
+#markak h2,
+#letoltesek h2{
+  font-size:clamp(38px,5vw,68px)!important;
+  line-height:1.12!important;
+  letter-spacing:.018em!important;
+  font-weight:730!important;
+}
+
+/* Keep brand section clean, no black boxes */
+#markak .brand-copy,
+#markak .brand-row,
+.brand-copy{
+  background:transparent!important;
+  box-shadow:none!important;
+}
+#markak .brand-copy p{
+  color:#625d55!important;
+}
+#markak .brand-copy h3{
+  color:#151515!important;
+}
+
+/* References polish */
+.refs .section-head p{
+  max-width:760px!important;
+}
+.refs .logos{
+  grid-template-columns:repeat(3,1fr)!important;
+}
+@media(max-width:800px){
+  .refs .logos{grid-template-columns:repeat(2,1fr)!important;}
+  .intro-insert{width:100%;margin-left:0;}
+}
+@media(max-width:520px){
+  .refs .logos{grid-template-columns:1fr!important;}
+}
+
+/* Contact email smaller */
+#kapcsolat a[href^="mailto"],
+.contact a[href^="mailto"]{
+  font-size:clamp(20px,2.2vw,34px)!important;
+  line-height:1.15!important;
+  word-break:break-word!important;
+}
+
+/* v1.15: cleaner v1.6 direction with approved details */
+
+/* Flow image as background for the Nem katalogus section */
+section.intro-section:not(.hero){
+  position:relative!important;
+  overflow:hidden!important;
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.84) 0%, rgba(0,0,0,.64) 38%, rgba(0,0,0,.18) 100%),
+    url('img/intro-bg.jpg') center center / cover no-repeat!important;
+  padding-top:clamp(90px,10vw,150px)!important;
+  padding-bottom:clamp(90px,10vw,150px)!important;
+}
+section.intro-section:not(.hero) .container{
+  position:relative;
+  z-index:2;
+}
+section.intro-section:not(.hero) .section-head{
+  max-width:760px!important;
+}
+section.intro-section:not(.hero) .section-title,
+section.intro-section:not(.hero) p{
+  color:#f4f1ea!important;
+}
+section.intro-section:not(.hero) .section-head p{
+  color:rgba(244,241,234,.82)!important;
+}
+section.intro-section:not(.hero) .why{
+  max-width:1040px;
+  background:rgba(0,0,0,.24);
+  backdrop-filter:blur(2px);
+}
+section.intro-section:not(.hero) .why article{
+  background:rgba(0,0,0,.34);
+  border-color:rgba(244,241,234,.18)!important;
+}
+section.intro-section:not(.hero) .why h3{
+  color:#f4f1ea!important;
+}
+section.intro-section:not(.hero) .why p,
+section.intro-section:not(.hero) .why .num{
+  color:rgba(244,241,234,.76)!important;
+}
+
+/* Keep major headline sizes consistent and controlled */
+.section-title,
+.about-copy h2,
+.about h2,
+.philosophy h2,
+.philosophy .section-title,
+.contact h2,
+.manifesto h2,
+.world-line h2,
+.refs h2,
+#tudastar h2,
+#markak h2,
+#letoltesek h2{
+  font-size:clamp(38px,5vw,68px)!important;
+  line-height:1.12!important;
+  letter-spacing:.018em!important;
+  font-weight:730!important;
+}
+
+/* Brand section: remove black boxes, keep editorial image/text */
+#markak .brand-copy,
+#markak .brand-row,
+.brand-copy{
+  background:transparent!important;
+  box-shadow:none!important;
+}
+#markak .brand-row{
+  border-top:1px solid rgba(21,21,21,.14)!important;
+}
+#markak .brand-copy p{
+  color:#625d55!important;
+}
+#markak .brand-copy h3{
+  color:#151515!important;
+}
+
+/* Philosophy image should do more work */
+.philosophy img,
+.manifesto img,
+.philosophy-image img,
+.manifesto-image img{
+  width:100%!important;
+  min-height:640px!important;
+  object-fit:cover!important;
+  object-position:center 12%!important;
+}
+.philosophy .container,
+.manifesto .container{
+  gap:clamp(40px,6vw,92px)!important;
+}
+
+/* References polish */
+.refs .section-head p{
+  max-width:760px!important;
+}
+.refs .logos{
+  grid-template-columns:repeat(3,1fr)!important;
+}
+@media(max-width:800px){
+  .refs .logos{grid-template-columns:repeat(2,1fr)!important;}
+}
+@media(max-width:520px){
+  .refs .logos{grid-template-columns:1fr!important;}
+}
+
+/* Email size */
+#kapcsolat a[href^="mailto"],
+.contact a[href^="mailto"]{
+  font-size:clamp(20px,2.2vw,34px)!important;
+  line-height:1.15!important;
+  word-break:break-word!important;
+}
+
+/* Keep page clean, no noisy chalk treatment */
+body:before,
+body:after{
+  display:none!important;
+}
+
+/* v1.16 cleanup: no Flow image, alternating light/dark editorial backgrounds */
+
+/* Hero: no CTA buttons */
+.hero .actions{display:none!important;}
+
+/* Reset "Nem katalogus" section: no background photo */
+section.intro-section:not(.hero){
+  background:
+    radial-gradient(circle at 12% 0%, rgba(0,160,185,.06), transparent 34rem),
+    linear-gradient(180deg,#f4f1ea,#eee8dd)!important;
+  color:#151515!important;
+}
+section.intro-section:not(.hero) .section-title,
+section.intro-section:not(.hero) p,
+section.intro-section:not(.hero) .why h3{
+  color:#151515!important;
+}
+section.intro-section:not(.hero) .section-head p,
+section.intro-section:not(.hero) .why p,
+section.intro-section:not(.hero) .why .num{
+  color:#625d55!important;
+}
+section.intro-section:not(.hero) .why,
+section.intro-section:not(.hero) .why article{
+  background:transparent!important;
+  backdrop-filter:none!important;
+}
+
+/* Alternating sections: light current background + dark grainy grey */
+.section:nth-of-type(odd):not(.intro-section):not(.hero):not(.refs),
+#markak .brand-row:nth-of-type(odd){
+  background:
+    radial-gradient(circle at 15% 8%, rgba(255,255,255,.035), transparent 28rem),
+    radial-gradient(circle at 88% 30%, rgba(0,160,185,.05), transparent 32rem),
+    linear-gradient(180deg,#191817,#11110f)!important;
+  color:#f4f1ea!important;
+}
+.section:nth-of-type(odd):not(.intro-section):not(.hero):not(.refs) .section-title,
+.section:nth-of-type(odd):not(.intro-section):not(.hero):not(.refs) h2,
+.section:nth-of-type(odd):not(.intro-section):not(.hero):not(.refs) h3,
+#markak .brand-row:nth-of-type(odd) h3{
+  color:#f4f1ea!important;
+}
+.section:nth-of-type(odd):not(.intro-section):not(.hero):not(.refs) p,
+#markak .brand-row:nth-of-type(odd) p{
+  color:#d6cec4!important;
+}
+.section:nth-of-type(odd):not(.intro-section):not(.hero):not(.refs) .cat,
+.section:nth-of-type(odd):not(.intro-section):not(.hero):not(.refs) .article,
+.section:nth-of-type(odd):not(.intro-section):not(.hero):not(.refs) .contact-card{
+  background:rgba(255,255,255,.035)!important;
+  color:#f4f1ea!important;
+  box-shadow:0 0 0 1px rgba(244,241,234,.08)!important;
+}
+
+/* Brand section: Flathold and Expression rows dark/grainy grey, Cheeta can stay light between */
+#markak .brand-row:nth-of-type(1),
+#markak .brand-row:nth-of-type(3){
+  background:
+    radial-gradient(circle at 12% 8%, rgba(255,255,255,.045), transparent 28rem),
+    radial-gradient(circle at 88% 36%, rgba(0,160,185,.06), transparent 32rem),
+    linear-gradient(180deg,#191817,#11110f)!important;
+  color:#f4f1ea!important;
+  padding:clamp(42px,6vw,86px)!important;
+}
+#markak .brand-row:nth-of-type(1) h3,
+#markak .brand-row:nth-of-type(3) h3{
+  color:#f4f1ea!important;
+}
+#markak .brand-row:nth-of-type(1) p,
+#markak .brand-row:nth-of-type(3) p{
+  color:#d6cec4!important;
+}
+#markak .brand-row:nth-of-type(1) .brand-copy,
+#markak .brand-row:nth-of-type(3) .brand-copy{
+  color:#f4f1ea!important;
+}
+
+/* Philosophy contrast */
+.philosophy,
+.manifesto{
+  background:
+    radial-gradient(circle at 18% 10%, rgba(255,255,255,.04), transparent 28rem),
+    linear-gradient(180deg,#171613,#11110f)!important;
+  color:#f4f1ea!important;
+}
+.philosophy h2,
+.manifesto h2,
+.philosophy .section-title,
+.manifesto .section-title{
+  color:#fffaf0!important;
+}
+.philosophy p,
+.manifesto p{
+  color:#f0e9dd!important;
+}
+
+/* References text contrast */
+.refs,
+.section.refs{
+  background:#11110f!important;
+  color:#f4f1ea!important;
+}
+.refs h2,
+.refs .section-title{
+  color:#f4f1ea!important;
+}
+.refs p,
+.refs .section-head p{
+  color:#e4ded4!important;
+}
+.refs .logos span{
+  color:#f4f1ea!important;
+  border-color:rgba(244,241,234,.22)!important;
+}
+
+/* Make sure dark logos are inverted only on dark sections if needed */
+#markak .brand-row:nth-of-type(1) .brand-logo img,
+#markak .brand-row:nth-of-type(3) .brand-logo img{
+  filter:brightness(0) invert(1)!important;
+}
+
+/* Keep email modest */
+#kapcsolat a[href^="mailto"],
+.contact a[href^="mailto"]{
+  font-size:clamp(20px,2.2vw,34px)!important;
+}
+
+/* v1.22 full rebuild from v1.16 + approved details */
+
+/* Main menu: white on hero, subtle dark tinted background after scroll */
+.nav{
+  color:#f7f3ec!important;
+  background:linear-gradient(to bottom,rgba(0,0,0,.48),rgba(0,0,0,0))!important;
+  border-bottom:0!important;
+}
+.nav.scrolled{
+  color:#f7f3ec!important;
+  background:rgba(17,17,15,.76)!important;
+  backdrop-filter:blur(14px)!important;
+  border-bottom:1px solid rgba(247,243,236,.14)!important;
+}
+.site-title,
+.nav-links a,
+.menu-btn{
+  color:#f7f3ec!important;
+  text-shadow:0 1px 14px rgba(0,0,0,.35);
+}
+
+/* Hero: no CTA buttons */
+.hero .actions{display:none!important;}
+
+/* Nem katalogus section with Flow 1411 background */
+section.intro-section:not(.hero){
+  background:
+    linear-gradient(90deg, rgba(0,0,0,.86) 0%, rgba(0,0,0,.62) 42%, rgba(0,0,0,.20) 100%),
+    url('img/intro-bg.jpg') center center / cover no-repeat!important;
+  color:#f7f3ec!important;
+  padding-top:clamp(90px,10vw,150px)!important;
+  padding-bottom:clamp(90px,10vw,150px)!important;
+}
+section.intro-section:not(.hero) .section-title{
+  font-size:clamp(30px,3.8vw,50px)!important;
+}
+section.intro-section:not(.hero) .section-title,
+section.intro-section:not(.hero) h2,
+section.intro-section:not(.hero) h3,
+section.intro-section:not(.hero) p{
+  color:#f7f3ec!important;
+}
+section.intro-section:not(.hero) .section-head p,
+section.intro-section:not(.hero) .why p{
+  color:rgba(247,243,236,.84)!important;
+}
+section.intro-section:not(.hero) .why,
+section.intro-section:not(.hero) .why article{
+  background:transparent!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+}
+section.intro-section:not(.hero) .why article{
+  border-color:rgba(247,243,236,.20)!important;
+}
+.num{display:none!important;}
+
+/* Credibility cards black letters on light cards if used outside intro */
+.why article,
+.credibility-card{
+  color:#151515!important;
+}
+.why article h3,
+.credibility-card h3{
+  color:#111!important;
+}
+.why article p,
+.credibility-card p{
+  color:#4c4741!important;
+}
+section.intro-section:not(.hero) .why article h3{
+  color:#f7f3ec!important;
+}
+section.intro-section:not(.hero) .why article p{
+  color:rgba(247,243,236,.84)!important;
+}
+
+/* Brand section: lighter grainy grey and high-contrast text */
+#markak .brand-row{
+  background:
+    radial-gradient(circle at 15% 10%, rgba(255,255,255,.055), transparent 28rem),
+    radial-gradient(circle at 85% 40%, rgba(255,255,255,.025), transparent 34rem),
+    linear-gradient(180deg,#242220,#171614)!important;
+  color:#f7f3ec!important;
+  padding:clamp(42px,6vw,86px)!important;
+}
+#markak .brand-row h3,
+#markak .brand-copy h3{
+  color:#fffaf2!important;
+}
+#markak .brand-row p,
+#markak .brand-copy p{
+  color:#d8d1c7!important;
+}
+#markak .brand-row a,
+#markak .brand-row .text-link{
+  color:#fffaf2!important;
+}
+#markak .brand-row:nth-of-type(2) img,
+#markak .brand-row:nth-of-type(2) .brand-logo img{
+  filter:brightness(0) invert(1)!important;
+}
+
+/* Philosophy text contrast */
+.philosophy h2,
+.manifesto h2,
+.philosophy .section-title,
+.manifesto .section-title{
+  color:#fffaf2!important;
+}
+.philosophy p,
+.manifesto p{
+  color:#f0e9dd!important;
+}
+
+/* About headline smaller */
+.about h2,
+.about-copy h2{
+  font-size:clamp(30px,3.8vw,50px)!important;
+}
+
+/* References contrast */
+.refs,
+.section.refs{
+  background:#11110f!important;
+  color:#f7f3ec!important;
+}
+.refs h2,
+.refs .section-title{
+  color:#f7f3ec!important;
+}
+.refs p,
+.refs .section-head p{
+  color:#e4ded4!important;
+}
+.refs .logos span{
+  color:#f7f3ec!important;
+  border-color:rgba(247,243,236,.22)!important;
+}
+
+/* Contact email white and modest */
+#kapcsolat a[href^="mailto"],
+.contact a[href^="mailto"]{
+  color:#fffaf2!important;
+  font-size:clamp(20px,2.2vw,34px)!important;
+  line-height:1.15!important;
+  word-break:break-word!important;
+}
+#kapcsolat .contact-card,
+.contact-card{
+  background:#11110f!important;
+  color:#f7f3ec!important;
+}
+#kapcsolat .contact-card p,
+.contact-card p{
+  color:#e4ded4!important;
+}
+
+/* v1.23 contrast fixes */
+
+/* 4 credibility cards: transparent background, subtle border, readable light text */
+section.intro-section:not(.hero) .why{
+  background:transparent!important;
+  border-color:rgba(247,243,236,.24)!important;
+}
+section.intro-section:not(.hero) .why article{
+  background:rgba(0,0,0,.08)!important;
+  border-color:rgba(247,243,236,.28)!important;
+  box-shadow:none!important;
+}
+section.intro-section:not(.hero) .why article h3{
+  color:#fffaf2!important;
+}
+section.intro-section:not(.hero) .why article p{
+  color:rgba(255,250,242,.82)!important;
+}
+
+/* References: white / grey combination, no dark unreadable text */
+.refs,
+.section.refs,
+section.refs{
+  background:#11110f!important;
+  color:#f7f3ec!important;
+}
+.refs h2,
+.refs h3,
+.refs .section-title,
+.section.refs h2,
+.section.refs h3,
+.section.refs .section-title{
+  color:#fffaf2!important;
+}
+.refs p,
+.refs .section-head p,
+.section.refs p,
+.section.refs .section-head p{
+  color:#d8d1c7!important;
+}
+.refs .logos span,
+.section.refs .logos span{
+  color:#f7f3ec!important;
+  border-color:rgba(247,243,236,.24)!important;
+  background:rgba(255,255,255,.03)!important;
+}
+
+
+/* v1.24 hard overrides for reported remaining issues */
+
+/* Credibility cards: transparent, no off-white fill */
+section.intro-section .why,
+section.intro-section .why article,
+section.intro-section .why > *,
+section.intro-section .why article > *{
+  background-color:transparent!important;
+}
+section.intro-section .why article{
+  background:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  border:1px solid rgba(247,243,236,.34)!important;
+}
+section.intro-section .why{
+  background:transparent!important;
+  background-image:none!important;
+  border-color:rgba(247,243,236,.34)!important;
+}
+section.intro-section .why article h3{
+  color:#fffaf2!important;
+}
+section.intro-section .why article p{
+  color:rgba(255,250,242,.84)!important;
+}
+
+/* Brand download / website links: force white */
+#markak a,
+#markak a:link,
+#markak a:visited,
+#markak .text-link,
+#markak .brand-copy a,
+#markak .brand-row a,
+#markak .brand-row .text-link,
+#markak .brand-copy .text-link,
+#markak p a,
+#markak .brand-copy p a{
+  color:#fffaf2!important;
+  border-color:#fffaf2!important;
+  text-decoration-color:#fffaf2!important;
+}
+#markak .brand-row h3,
+#markak .brand-copy h3{
+  color:#fffaf2!important;
+}
+#markak .brand-row p,
+#markak .brand-copy p{
+  color:#d8d1c7!important;
+}
+
+/* References: big text white, smaller text grey */
+.refs,
+.section.refs,
+section.refs,
+section[class*="refs"]{
+  color:#f7f3ec!important;
+}
+.refs h1,
+.refs h2,
+.refs h3,
+.refs .section-title,
+.section.refs h1,
+.section.refs h2,
+.section.refs h3,
+.section.refs .section-title,
+section[class*="refs"] h1,
+section[class*="refs"] h2,
+section[class*="refs"] h3,
+section[class*="refs"] .section-title{
+  color:#fffaf2!important;
+}
+.refs p,
+.refs .section-head p,
+.section.refs p,
+.section.refs .section-head p,
+section[class*="refs"] p,
+section[class*="refs"] .section-head p{
+  color:#d8d1c7!important;
+}
+.refs .logos span,
+.section.refs .logos span,
+section[class*="refs"] .logos span{
+  color:#fffaf2!important;
+  border-color:rgba(247,243,236,.26)!important;
+}
+
+/* fallback for logo/reference grid items */
+.logos span{
+  color:inherit;
+}
+
+
+/* v1.25 final targeted fixes */
+
+/* 4 credibility cards: no background, only transparent border, background image visible */
+section.intro-section .why,
+section.intro-section .why article{
+  background:none!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+}
+section.intro-section .why article{
+  border:1px solid rgba(247,243,236,.36)!important;
+}
+section.intro-section .why{
+  border-color:rgba(247,243,236,.36)!important;
+}
+section.intro-section .why article h3{
+  color:#fffaf2!important;
+}
+section.intro-section .why article p{
+  color:rgba(255,250,242,.84)!important;
+}
+
+/* References: heading white, venue names light grey */
+.refs h1,
+.refs h2,
+.refs h3,
+.refs .section-title,
+.section.refs h1,
+.section.refs h2,
+.section.refs h3,
+.section.refs .section-title,
+section[class*="refs"] h1,
+section[class*="refs"] h2,
+section[class*="refs"] h3,
+section[class*="refs"] .section-title{
+  color:#fffaf2!important;
+}
+.refs .logos span,
+.section.refs .logos span,
+section[class*="refs"] .logos span{
+  color:#d8d1c7!important;
+  border-color:rgba(247,243,236,.24)!important;
+}
+.refs p,
+.refs .section-head p,
+.section.refs p,
+.section.refs .section-head p,
+section[class*="refs"] p,
+section[class*="refs"] .section-head p{
+  color:#d8d1c7!important;
+}
+
+/* Flathold / brand links stay white */
+#markak a,
+#markak a:link,
+#markak a:visited,
+#markak .text-link,
+#markak .brand-copy a,
+#markak .brand-row a{
+  color:#fffaf2!important;
+  border-color:#fffaf2!important;
+}
+
+
+/* =========================================================
+   v1.26 targeted fix from uploaded v1.25 package
+   Actual classes: .why-grid, .why-card, .references, .ref-list
+   ========================================================= */
+
+/* 4 kártya: teljesen transparent háttér + vékony border */
+.intro-section .why-grid{
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  gap:1px!important;
+}
+.intro-section .why-card{
+  background:transparent!important;
+  background-color:transparent!important;
+  background-image:none!important;
+  box-shadow:none!important;
+  backdrop-filter:none!important;
+  border:1px solid rgba(255,250,242,.34)!important;
+}
+.intro-section .why-card,
+.intro-section .why-card *{
+  background-color:transparent!important;
+  background-image:none!important;
+}
+.intro-section .why-card h3{
+  color:#fffaf2!important;
+}
+.intro-section .why-card p{
+  color:rgba(255,250,242,.84)!important;
+}
+.intro-section .why-card .num,
+.why-card .num{
+  display:none!important;
+}
+
+/* Brandek: minden márka link / letöltés link fehér */
+#markak .brand-actions a,
+#markak .brand-actions a:link,
+#markak .brand-actions a:visited,
+#markak .brand-actions .btn,
+#markak .brand-actions .text-link,
+#markak .brand-copy a,
+#markak .brand-copy a:link,
+#markak .brand-copy a:visited{
+  color:#fffaf2!important;
+  border-color:#fffaf2!important;
+  text-decoration-color:#fffaf2!important;
+}
+#markak .brand-actions .btn{
+  background:transparent!important;
+  box-shadow:inset 0 0 0 1px rgba(255,250,242,.72)!important;
+}
+#markak .brand-copy h3{
+  color:#fffaf2!important;
+}
+#markak .brand-copy p{
+  color:#d8d1c7!important;
+}
+
+/* Referenciák: főcím fehér, minden más világosszürke */
+.section.black .references h2,
+.references h2{
+  color:#fffaf2!important;
+}
+.section.black .references p,
+.references p{
+  color:#d8d1c7!important;
+}
+.section.black .ref-list,
+.section.black .ref-list li,
+.ref-list,
+.ref-list li{
+  color:#d8d1c7!important;
+}

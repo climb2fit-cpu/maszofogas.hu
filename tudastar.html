@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tudástár – Cikkek mászófogásokról és route settingről | maszofogasok.hu</title>
+  <meta name="description" content="Szakmai cikkek mászófogásokról, route settingről és mászóterem-tervezésről. Aktív route setterektől, teremüzemeltetői tapasztalattal.">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="canonical" href="https://www.maszofogasok.hu/tudastar.html">
+  <meta property="og:title" content="Tudástár – Cikkek mászófogásokról és route settingről">
+  <meta property="og:description" content="Szakmai cikkek mászófogásokról, route settingről és mászóterem-tervezésről. Aktív route setterektől, teremüzemeltetői tapasztalattal.">
+  <meta property="og:url" content="https://www.maszofogasok.hu/tudastar.html">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="hu_HU">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="robots" content="index, follow">
+  <style>
+    .tudastar-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .tudastar-card {
+      background: var(--surface, #fff);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 1px 4px rgba(0,0,0,.08);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .tudastar-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 20px rgba(0,0,0,.13);
+    }
+    .tudastar-card a {
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .tudastar-card .thumb {
+      width: 100%;
+      aspect-ratio: 3/2;
+      object-fit: cover;
+      display: block;
+    }
+    .tudastar-card .card-body {
+      padding: 16px 18px 20px;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .tudastar-card h2 {
+      font-size: 1rem;
+      line-height: 1.4;
+      margin: 0 0 8px;
+    }
+    .tudastar-card p {
+      font-size: .875rem;
+      line-height: 1.55;
+      margin: 0 0 14px;
+      opacity: .75;
+      flex: 1;
+    }
+    .tudastar-card .text-link {
+      font-size: .8rem;
+      font-weight: 600;
+      letter-spacing: .03em;
+      text-transform: uppercase;
+    }
+    @media (max-width: 600px) {
+      .tudastar-grid { grid-template-columns: 1fr; gap: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header class="nav scrolled" id="nav">
+    <a class="site-title" href="index.html#top">maszofogasok.hu</a>
+    <nav class="nav-links" aria-label="Fő navigáció">
+      <a href="index.html#markak">Márkák</a>
+      <a href="tudastar.html">Tudástár</a>
+      <a href="index.html#letoltesek">Letöltések</a>
+      <a href="index.html#kapcsolat">Kapcsolat</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" type="button">Menü</button>
+  </header>
+  <main>
+    <section class="knowledge-hero">
+      <div class="container">
+        <h1>Tudástár</h1>
+        <p>Szakmai cikkek mászófogásokról, route settingről, fogáskészletekről és mászóterem-tervezésről.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="container">
+        <div class="tudastar-grid">
+
+          <article class="tudastar-card">
+            <a href="tudastar/mitol-jo-egy-maszofogas.html">
+              <img class="thumb" src="assets/img/articles/mitol-jo-egy-maszofogas.jpg" alt="Mitől jó egy mászófogás?">
+              <div class="card-body">
+                <h2>Mitől jó egy mászófogás?</h2>
+                <p>A jó fogás nem csak arról szól, hogy milyen megfogni. Route setter szemmel a fogások építőelemek, amelyekkel mozgást lehet létrehozni.</p>
+                <span class="text-link">Cikk olvasása →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="tudastar-card">
+            <a href="tudastar/jol-hasznalhato-fogaskeszlet.html">
+              <img class="thumb" src="assets/img/articles/fogaskeszlet.jpg" alt="Hogyan áll össze egy jól használható fogáskészlet?">
+              <div class="card-body">
+                <h2>Hogyan áll össze egy jól használható fogáskészlet?</h2>
+                <p>Mennyi fogás kell egy boulderre, miért fontosak a jibek, és hogyan lesz egy fogáskészlet valódi route setting eszköztár?</p>
+                <span class="text-link">Cikk olvasása →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="tudastar-card">
+            <a href="tudastar/pu-pe-fogasok-tartossag.html">
+              <img class="thumb" src="assets/img/articles/pu-pe-tartossag.jpg" alt="PU vagy PE? Mitől tartós egy mászófogás?">
+              <div class="card-body">
+                <h2>PU vagy PE? Mitől tartós egy mászófogás?</h2>
+                <p>Anyagminőség, textúra, kopás, jibelhetőség és hosszú távú használhatóság mászótermi környezetben.</p>
+                <span class="text-link">Cikk olvasása →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="tudastar-card">
+            <a href="tudastar/modern-routesetting-eszkozok.html">
+              <img class="thumb" src="assets/img/articles/modern-routesetting.jpg" alt="Modern route setting eszközök">
+              <div class="card-body">
+                <h2>Modern route setting eszközök: makrók, fa elemek, dual-tex</h2>
+                <p>A modern útépítés nem fogások elhelyezése, hanem mozgás tervezése. Ehhez új típusú eszköztárra van szükség.</p>
+                <span class="text-link">Cikk olvasása →</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="tudastar-card">
+            <a href="tudastar/mekkora-fogaskeszlet-kell-egy-uj-maszoteremhez.html">
+              <img class="thumb" src="assets/img/articles/uj-maszoterem-fogaskoltseg.jpg" alt="Mekkora fogáskészlet kell egy új mászóteremhez?">
+              <div class="card-body">
+                <h2>Mekkora fogáskészlet kell egy új mászóteremhez?</h2>
+                <p>Fogásszám, makrók, fa elemek, színek és bővítési stratégia új boulder vagy köteles mászóterem tervezéséhez.</p>
+                <span class="text-link">Cikk olvasása →</span>
+              </div>
+            </a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <script>
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
+  </script>
+</body>
+</html>
