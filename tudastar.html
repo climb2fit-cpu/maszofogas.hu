@@ -3,23 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tudástár – Cikkek mászófogásokról és route settingről | maszofogasok.hu</title>
+  <title>Tudástár – Cikkek mászófogásokról és route settingről | maszofogas.hu</title>
   <meta name="description" content="Szakmai cikkek mászófogásokról, route settingről és mászóterem-tervezésről. Aktív route setterektől, teremüzemeltetői tapasztalattal.">
   <link rel="stylesheet" href="assets/style.css">
-  <link rel="canonical" href="https://www.maszofogasok.hu/tudastar.html">
+  <link rel="canonical" href="https://www.maszofogas.hu/tudastar.html">
   <meta property="og:title" content="Tudástár – Cikkek mászófogásokról és route settingről">
   <meta property="og:description" content="Szakmai cikkek mászófogásokról, route settingről és mászóterem-tervezésről. Aktív route setterektől, teremüzemeltetői tapasztalattal.">
-  <meta property="og:url" content="https://www.maszofogasok.hu/tudastar.html">
+  <meta property="og:url" content="https://www.maszofogas.hu/tudastar.html">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="hu_HU">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="robots" content="index, follow">
   <style>
+    .knowledge-hero {
+      padding-top: 120px;
+      padding-bottom: 48px;
+    }
     .tudastar-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 24px;
-      margin-top: 40px;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 28px;
+      margin-top: 8px;
     }
     .tudastar-card {
       background: var(--surface, #fff);
@@ -46,37 +50,38 @@
       display: block;
     }
     .tudastar-card .card-body {
-      padding: 16px 18px 20px;
+      padding: 20px 22px 24px;
       display: flex;
       flex-direction: column;
       flex: 1;
     }
     .tudastar-card h2 {
-      font-size: 1rem;
-      line-height: 1.4;
-      margin: 0 0 8px;
+      font-size: 1.05rem;
+      line-height: 1.45;
+      margin: 0 0 12px;
     }
     .tudastar-card p {
-      font-size: .875rem;
-      line-height: 1.55;
-      margin: 0 0 14px;
-      opacity: .75;
+      font-size: .9rem;
+      line-height: 1.7;
+      margin: 0 0 20px;
+      opacity: .72;
       flex: 1;
     }
     .tudastar-card .text-link {
       font-size: .8rem;
       font-weight: 600;
-      letter-spacing: .03em;
+      letter-spacing: .05em;
       text-transform: uppercase;
     }
     @media (max-width: 600px) {
-      .tudastar-grid { grid-template-columns: 1fr; gap: 16px; }
+      .knowledge-hero { padding-top: 100px; }
+      .tudastar-grid { grid-template-columns: 1fr; gap: 18px; }
     }
   </style>
 </head>
 <body>
   <header class="nav scrolled" id="nav">
-    <a class="site-title" href="index.html#top">maszofogasok.hu</a>
+    <a class="site-title" href="index.html#top">maszofogas.hu</a>
     <nav class="nav-links" aria-label="Fő navigáció">
       <a href="index.html#markak">Márkák</a>
       <a href="tudastar.html">Tudástár</a>
